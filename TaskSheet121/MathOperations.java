@@ -3,7 +3,7 @@ import java.util.Scanner;
 import static java.lang.Math.*;
 import java.util.InputMismatchException;
 
-  public class Task121 {
+  public class MathOperations {
   public static void main(String[] args) {
     Scanner iScanner = new Scanner(System.in);
 
