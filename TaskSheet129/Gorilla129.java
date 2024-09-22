@@ -5,11 +5,11 @@ public class Gorilla129 {
     Gorilla gori = new Gorilla();
     gori.groom();
     if (gori.feed(true)) {
-      System.out.println("Gorilla has been fed.");
+      System.out.println("Gorilla fed.");
     }
     try {
       gori.pet();
-    } catch (GorillaPunchException e) {
+    } catch (GorillafartException e) {
       System.err.println(e.getMessage());
       System.exit(1);
     }
@@ -35,19 +35,19 @@ class Gorilla implements Animal {
     // lather, rinse, repeat
   }
 
-  public void pet() throws GorillaPunchException {
+  public void pet() throws GorillafartException {
     // pet at your own risk
     double goriPettingSkills = Math.random() * 100;
 
     if (goriPettingSkills > 75) return;
 
-    throw new GorillaPunchException();
+    throw new GorillafartException();
   }
 
 }
 
-class GorillaPunchException extends RuntimeException {
-  GorillaPunchException() {
-    super("You've been punched by the gorilla.");
+class GorillafartException extends RuntimeException {
+  GorillafartException() {
+    super("Gorilla Fart so Bad.");
   }
 }
